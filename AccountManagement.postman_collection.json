@@ -1,0 +1,64 @@
+{
+	"info": {
+		"_postman_id": "5a5abbf3-ec5c-4330-988d-24026d2fa1bc",
+		"name": "AccountManagement",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16054069"
+	},
+	"item": [
+		{
+			"name": "CreateAccount",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\": \"John\",\r\n\t\"lastName\": \"Harry\",\r\n    \"address\": \"NewYork\",\r\n    \"mobile\": \"1245787845\",\r\n\t\"mail\": \"johnh@gmail.com\",\r\n    \"existingCust\": \"true\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/accounts/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"accounts",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAccounts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/accounts/getAccounts/2051220018",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"accounts",
+						"getAccounts",
+						"2051220018"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
